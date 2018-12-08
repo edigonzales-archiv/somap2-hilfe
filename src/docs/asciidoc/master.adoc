@@ -7,6 +7,7 @@
 :author: {author_name}
 :email: {author_email}
 :revnumber: 1.1.0
+:sectnums:
 
 == Einleitung
 

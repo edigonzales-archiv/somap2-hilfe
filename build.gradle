@@ -12,11 +12,11 @@ dependencies {
         'org.codehaus.groovy:groovy-all:2.4.9',
         'org.spockframework:spock-core:1.1-groovy-2.4'
     )
-    asciidoctor 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.15'
+    asciidoctor 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.16'
 }
 
 asciidoctorj {
-    version = '1.5.4'
+    version = '1.5.8.1'
 }
 
 ext {
@@ -52,6 +52,10 @@ task generatePDF (
     description: 'use pdf as asciidoc backend') {
 
     backends = ['pdf']
+    attributes \
+        'pdf-stylesdir': "$projectDir/src/docs/asciidoc/theme",
+        'pdf-style': 'custom',
+        'pdf-fontsdir': "$projectDir/src/docs/asciidoc/theme"
 }
 
 defaultTasks 'clean', 'asciidoctor'
