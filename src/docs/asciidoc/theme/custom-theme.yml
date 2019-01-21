@@ -5,10 +5,15 @@ font:
       italic: frutiger-italic.ttf
       bold: frutiger-bold.ttf
       bold_italic: frutiger-bold_italic.ttf
-
 title_page:
   align: left
-
+  #background_image: image:images/nutzungsplanung.png[]
+title_page_logo:
+  align: right
+  image: image:images/cantonallogo.png[pdfwidth=30%]
+  top: 0%
+title_page_title:
+  font_style: bold
 page:
   layout: portrait
   margin: [0.75in, 1in, 0.75in, 1in]
